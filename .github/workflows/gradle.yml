@@ -53,7 +53,7 @@ jobs:
       run: |
         aws deploy create-deployment \
         --application-name makecake \
-        --deployment-group-name devssk \
+        --deployment-group-name makecake \
         --file-exists-behavior OVERWRITE \
-        --s3-loaction bucket=devssk,bundleTyple=zip,key=makecake.zip \
+        --s3-loaction bucket=devssk,bundleType=zip,key=makecake.zip \
         --region ap-northeast-2
