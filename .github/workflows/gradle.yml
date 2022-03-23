@@ -55,5 +55,5 @@ jobs:
         --application-name makecake \
         --deployment-group-name devssk \
         --file-exists-behavior OVERWRITE \
-        --s3-loaction bucket=devssk,bundleTyple=zip,key=makecake.zip \
+        --s3-location bucket=devssk,bundleTyple=zip,key=makecake.zip \
         --region ap-northeast-2
