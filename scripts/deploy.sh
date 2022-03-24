@@ -1,5 +1,5 @@
 REPOSITORY=/home/ubuntu/deploy
-cd $REPOSITOR
+cd $REPOSITORY
 
 APP_NAME=cdsample #1
 JAR_NAME=$(ls $REPOSITORY/build/libs/ | grep '.jar' | tail -n 1)
