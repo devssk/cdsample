@@ -29,7 +29,7 @@ jobs:
       run: chmod +x ./gradlew
         
     - name: Build with Gradle
-      run: ./gradlew build -Pjasypt.encryptor.password= ${{ secrets.JASYPT_KEY }}
+      run: ./gradlew build
         
     # 압축파일 형태로 전달
     - name: Make zip file
