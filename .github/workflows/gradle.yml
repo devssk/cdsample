@@ -18,7 +18,7 @@ jobs:
 
     runs-on: ubuntu-latest
     env:
-      jasypt.encryptor.password: ${{ JASYPS_KEY }}
+      jasypt.encryptor.password: ${{ JASYPT_KEY }}
 
 
     steps:
