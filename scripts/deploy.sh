@@ -2,8 +2,8 @@ REPOSITORY=/home/ubuntu/deploy
 cd $REPOSITORY
 
 APP_NAME=cdsample #1
-JAR_NAME=$(ls $REPOSITORY/build/libs/ | grep '.jar' | tail -n 1)
-JAR_PATH=$REPOSITORY/build/libs/$JAR_NAME
+JAR_NAME=$(ls $REPOSITORY/ | grep '.jar' | tail -n 1)
+JAR_PATH=$REPOSITORY/$JAR_NAME
 
 CURRENT_PID=$(pgrep -f $APP_NAME)
 if [ -z $CURRENT_PID ] #2
@@ -16,4 +16,4 @@ else
 fi
 
 echo "> $JAR_PATH 배포" #3
-nohup java -jar /home/ubuntu/deploy/build/libs/cdsample-0.0.1-SNAPSHOT.jar > /dev/null 2> /dev/null < /dev/null &
+nohup java -jar /home/ubuntu/deploy/cdsample-0.0.1-SNAPSHOT.jar > /dev/null 2> /dev/null < /dev/null &
