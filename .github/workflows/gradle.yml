@@ -17,6 +17,9 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
+    env:
+      jasypt.encryptor.password: ${{ JASYPS_KEY }}
+
 
     steps:
     - uses: actions/checkout@v2
